@@ -9,6 +9,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
       rel="stylesheet"
     />
@@ -49,6 +54,21 @@
       };
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+      });
+    </script>
+
     <style>
       html {
         scroll-behavior: smooth;
@@ -78,6 +98,15 @@
             </li>
             <li class="hover:text-[#D21312] ease-in-out duration-[250ms]">
               <a href="#porto">Portofolio</a>
+            </li>
+            <li class="hover:text-[#D21312] ease-in-out duration-[250ms]">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="hover:text-[#D21312] ease-in-out duration-[250ms]">
+              <a href="#certification">Certification</a>
+            </li>
+            <li class="hover:text-[#D21312] ease-in-out duration-[250ms]">
+              <a href="#skill">Skill</a>
             </li>
             <li class="hover:text-[#D21312] ease-in-out duration-[250ms]">
               <a href="#contactdes">Contact</a>
@@ -134,6 +163,21 @@
               class="text-xl text-center hover:opacity-20 ease-in-out duration-[250ms]"
             >
               <a href="#porto">portofolio</a>
+            </li>
+            <li
+              class="text-xl text-center hover:opacity-20 ease-in-out duration-[250ms]"
+            >
+              <a href="#experience">Experience</a>
+            </li>
+            <li
+              class="text-xl text-center hover:opacity-20 ease-in-out duration-[250ms]"
+            >
+              <a href="#certification">certification</a>
+            </li>
+            <li
+              class="text-xl text-center hover:opacity-20 ease-in-out duration-[250ms]"
+            >
+              <a href="#skill">Skill</a>
             </li>
             <li
               class="text-xl text-center hover:opacity-20 ease-in-out duration-[250ms]"
@@ -248,19 +292,12 @@
         <h1
           class="text-3xl font-bold text-[#27EBF5] w-fit px-2 py-1 rounded-md font-alata"
         >
-          Hello!
+          Pranata Putrandana
         </h1>
         <p class="opacity-70">
-          Let me introduce myself, my name is Pranata Putrandana, I am a
-          programmer and currently I am still a student at Politeknik Negeri
-          Malang.
+          Hey there! I’m Pranata Putrandana, I love spending my time building
+          websites, learning new languages, and exploring the world of tech.
         </p>
-        <a
-          class="bg-[#27EBF5] font-bold text-white w-fit py-2 px-4 rounded-lg hover:scale-105 hover:opacity-90 ease-in-out duration-[250ms]"
-          href=""
-          target="_blank"
-          >Download CV</a
-        >
       </div>
     </div>
 
@@ -274,19 +311,12 @@
         <h1
           class="text-2xl font-bold w-fit py-1 rounded-md text-[#D21312] font-alata"
         >
-          Hallo,<span class="py-1 px-2 rounded-r-md">Semua</span>
+          Pranata<span class="py-1 px-2 rounded-r-md">Putrandana</span>
         </h1>
         <p class="pb-3 opacity-70 text-md">
-          Perkenalkan Nama saya Pranata Putrandana, saya adalah seorang
-          programmer dan saat ini saya masih berstatus sebagai pelajar di
-          Politeknik Negeri Malang.
+          Hey there! I’m Pranata Putrandana, I love spending my time building
+          websites, learning new languages, and exploring the world of tech.
         </p>
-        <a
-          class="bg-[#27EBF5] font-bold text-white w-fit py-2 px-4 rounded-lg hover:bg-[#FF6D60] hover:text-[#2C3639] ease-in-out duration-[250ms]"
-          href="https://drive.google.com/file/d/1bnRSasu15W6yKG73Ug1cV7KtlMXDEbM-/view?usp=drive_link"
-          target="_blank"
-          >Download CV</a
-        >
       </div>
     </div>
     <!--Introduction -->
@@ -309,12 +339,17 @@
           >
             me.
           </h1>
-          <h2 class="py-6 text-2xl font-light opacity-70">
-            I'm a Student and a Programmer
-          </h2>
+          <h2 class="py-6 text-2xl font-light opacity-70">HI THERE!!</h2>
           <p class="text-lg opacity-90 font-sarabun">
-            I'm a student at Politeknik Negeri Malang, majoring in Software
-            Engineering.
+            My name is <b>Pranata Putrandana</b>, and I’m currently a student
+            majoring in <b>Information Technology</b> at
+            <b>Politeknik Negeri Malang</b>. I live in Malang, where I spend
+            most of my time exploring tech and building websites. <br />
+            I have a strong interest in web development and enjoy learning new
+            languages whenever I have the chance. Beyond academics, I actively
+            join seminars and organizational activities to grow my knowledge and
+            expand my network. <br />People often say I’m easy to get along
+            with—I love meeting new people and building meaningful connections.
           </p>
         </div>
       </div>
@@ -365,7 +400,7 @@
               </a>
               <h2 class="pl-5 font-sarabun text-xl">Web Portofolio Pribadi</h2>
               <h2 class="pl-5 font-sarabun text-md">
-                HTML, Tailwind, JavaScript
+                HTML, Tailwind, Bootstrap, JavaScript
               </h2>
             </div>
           </div>
@@ -377,10 +412,25 @@
             class="bg-[#F5F6FA] lg:w-2/5 px-5 py-5 rounded-sm shadow-luardalam hover:scale-105 ease-in-out duration-[600ms] hover:shadow-xl"
           >
             <div data-aos="fade-up" data-aos-duration="800">
-              <img class="mx-auto mb-5" src="img/porto.png" alt="" />
-              <h2 class="pl-5 font-sarabun text-xl">Portofolio</h2>
+              <a href="https://pranatap.github.io/Proyek_Dicoding/">
+                <img class="mx-auto mb-5" src="img/dicoding.png" alt="" />
+              </a>
+              <h2 class="pl-5 font-sarabun text-xl">Proyek Dicoding</h2>
+              <h2 class="pl-5 font-sarabun text-md">HTML, CSS</h2>
+            </div>
+          </div>
+          <div
+            class="lg:w-2/5 bg-[#F5F6FA] px-5 py-5 rounded-sm shadow-luardalam hover:scale-105 ease-in-out duration-[600ms] hover:shadow-xl"
+          >
+            <div data-aos="fade-up" data-aos-duration="800">
+              <a
+                href="https://ppt-biogeografi-bq0ci0eks-noshikas-projects.vercel.app/"
+              >
+                <img class="mx-auto mb-5" src="img/biogeografi.png" alt="" />
+              </a>
+              <h2 class="pl-5 font-sarabun text-xl">Slide Biogeografi</h2>
               <h2 class="pl-5 font-sarabun text-md">
-                HTML, Tailwind, JavaScript
+                HTML, Bootstrap, JavaScript
               </h2>
             </div>
           </div>
@@ -389,8 +439,169 @@
     </section>
     <!--portofolio -->
 
+    <!-- Organisasi dan kegiatan -->
+    <section id="experience" class="shadow-md mb-[2.5px] py-20 bg-[#F9F5F6]">
+      <div class="h-full px-10 lg:px-32 space-y-4">
+        <h1
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="font-alata font-bold text-5xl text-[#27EBF5] lg:text-6xl my-10"
+        >
+          experience.
+        </h1>
+        <h2
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="py-3 font-alata font-medium text-xl text-black text-opacity-60"
+        >
+          I'd love to join any organization or activity
+        </h2>
+        <div
+          class="lg:flex lg:flex-wrap gap-5 justify-center py-5 space-y-5 lg:space-y-0"
+        >
+          <div
+            class="bg-[#18181b] lg:w-2/5 px-5 py-5 rounded-sm shadow-luardalam hover:scale-105 ease-in-out duration-[600ms] hover:shadow-xl"
+          >
+            <div data-aos="fade-up" data-aos-duration="800">
+              <img
+                class="mx-auto mb-5 cursor-pointer hover:opacity-80 transition"
+                src="img/aiready.jpg"
+                alt=""
+              />
+
+              <h2 class="pl-5 font-sarabun text-xl">AI Ready ASEAN</h2>
+              <h2 class="pl-5 font-sarabun text-md">
+                Saya menghadiri Seminar yang didatangi oleh Kaizenroom pada
+                acara Literasi Penulisan
+              </h2>
+            </div>
+          </div>
+          <div
+            class="lg:w-2/5 bg-[#18181b] px-5 py-5 rounded-sm shadow-luardalam hover:scale-105 ease-in-out duration-[600ms] hover:shadow-xl"
+          >
+            <div data-aos="fade-up" data-aos-duration="800">
+              <a href=""
+                ><img class="mx-auto mb-5" src="img/tonil.JPG " alt="" />
+              </a>
+              <h2 class="pl-5 font-sarabun text-xl">
+                Toneel Club Kelimutu Reborn
+              </h2>
+              <h2 class="pl-5 font-sarabun text-md">
+                Toneel Club Kelimutu Reborn adalah organisasi teater besar di
+                blitar dan berisi pelajar di berbagai daerah. Saya menjadi
+                anggota dan berpartisipasi dalam kegiatan teater di klub ini
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:flex lg:flex-wrap gap-5 justify-center py-5 space-y-5 lg:space-y-0"
+        >
+          <div
+            class="bg-[#18181b] lg:w-2/5 px-5 py-5 rounded-sm shadow-luardalam hover:scale-105 ease-in-out duration-[600ms] hover:shadow-xl"
+          >
+            <div data-aos="fade-up" data-aos-duration="800">
+              <img class="mx-auto mb-5" src="img/podcast.png" alt="" />
+              <h2 class="pl-5 font-sarabun text-xl">Juara 2 Lomba Podcast</h2>
+              <h2 class="pl-5 font-sarabun text-md">
+                Saya berpartisipasi dalam lomba podcast yang diselenggarakan
+                oleh komunitas lokal di Tulungagung.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Sertifikat -->
+    <section id="certification" class="shadow-md mb-[2.5px] py-20">
+      <div class="h-full px-10 lg:px-32 space-y-4">
+        <h1
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="font-alata font-bold text-5xl text-[#27EBF5] lg:text-6xl my-10"
+        >
+          sertification.
+        </h1>
+        <h2
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="py-3 font-alata font-medium text-xl text-black text-opacity-60"
+        >
+          The certificates I have recently obtained.
+        </h2>
+        <div class="flex flex-wrap gap-8 justify-center py-5">
+          <div
+            class="bg-[#F5F6FA] px-5 py-5 rounded-sm shadow-luardalam hover:scale-105 ease-in-out duration-300 hover:shadow-xl"
+          >
+            <a href="pdf/Pranata_SertifHTML.pdf" download>
+              <img
+                class="mx-auto mb-5 cursor-pointer hover:opacity-80 transition w-56 h-40 object-cover"
+                src="img/Sertifikat Web_pages-to-jpg-0001.jpg"
+                alt="Sertifikat 1"
+                title="Download Sertifikat 1"
+              />
+            </a>
+            <h2 class="pl-2 font-sarabun text-xl text-center">
+              Sertifikat HTML & CSS
+            </h2>
+            <h2 class="pl-2 font-sarabun text-xl text-center">
+              Dicoding & Google Developer
+            </h2>
+          </div>
+          <div
+            class="bg-[#F5F6FA] px-5 py-5 rounded-sm shadow-luardalam hover:scale-105 ease-in-out duration-300 hover:shadow-xl"
+          >
+            <a href="pdf/Pranata_SertifJS.pdf" download>
+              <img
+                class="mx-auto mb-5 cursor-pointer hover:opacity-80 transition w-56 h-40 object-cover"
+                src="img/Pranata_SertifJS_pages-to-jpg-0001.jpg"
+                alt="Sertifikat 2"
+                title="Download Sertifikat 2"
+              />
+            </a>
+            <h2 class="pl-2 font-sarabun text-xl text-center">
+              Sertifikat JavaScript
+            </h2>
+            <h2 class="pl-2 font-sarabun text-xl text-center">Dicoding</h2>
+          </div>
+          <div
+            class="bg-[#F5F6FA] px-5 py-5 rounded-sm shadow-luardalam hover:scale-105 ease-in-out duration-300 hover:shadow-xl"
+          >
+            <a href="pdf/Pranata_SertifAIReadyASEAN.pdf" download>
+              <img
+                class="mx-auto mb-5 cursor-pointer hover:opacity-80 transition w-56 h-40 object-cover"
+                src="img/Pranata_SertifAIReadyASEAN_page-0001.jpg"
+                alt="Sertifikat 3"
+                title="Download Sertifikat 3"
+              />
+            </a>
+            <h2 class="pl-2 font-sarabun text-xl text-center">
+              Sertifikat AI Ready ASEAN
+            </h2>
+          </div>
+          <div
+            class="bg-[#F5F6FA] px-5 py-5 rounded-sm shadow-luardalam hover:scale-105 ease-in-out duration-300 hover:shadow-xl"
+          >
+            <a href="img/Pranata_SertifPodcast.jpg" download>
+              <img
+                class="mx-auto mb-5 cursor-pointer hover:opacity-80 transition w-56 h-40 object-cover"
+                src="img/Pranata_SertifPodcast.jpg"
+                alt="Sertifikat 4"
+                title="Download Sertifikat 4"
+              />
+            </a>
+            <h2 class="pl-2 font-sarabun text-xl text-center">
+              Sertifikat Juara 2 Podcast
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--skill -->
     <section
+      id="skill"
       class="shadow-md bg-[#F9F5F6] flex flex-col pt-20 pb-10 px-10 lg:px-32"
     >
       <h1
@@ -398,18 +609,17 @@
         data-aos-duration="1000"
         class="font-bold font-alata text-4xl lg:text-5xl"
       >
-        bahasa
-        <span class="text-[#27EBF5]"> pemrograman</span>
+        <span class="text-[#27EBF5]"> skill</span>
       </h1>
       <h1
         data-aos="fade-left"
         data-aos-duration="1000"
         class="font-bold font-alata text-3xl lg:text-4xl"
       >
-        dan <span class="text-[#27EBF5]">framework.</span>
+        and <span class="text-[#27EBF5]">programming skill.</span>
       </h1>
       <h2 class="text-xl py-10 opacity-70">
-        Berikut ini adalah bahasa dan framework yang pernah saya gunakan
+        Here's my Programming Language and Framework skill
       </h2>
       <div
         class="w-fit flex flex-wrap justify-center px-5 py-5 rounded-md space-x-5"
@@ -459,17 +669,6 @@
           />
         </svg>
         <svg
-          class="fill-current w-10 text-[#FF2D20] lg:w-14 hover:scale-110 ease-in-out duration-[400ms]"
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>Laravel</title>
-          <path
-            d="M23.642 5.43a.364.364 0 01.014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 01-.188.326L9.93 23.949a.316.316 0 01-.066.027c-.008.002-.016.008-.024.01a.348.348 0 01-.192 0c-.011-.002-.02-.008-.03-.012-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 01-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.02.014-.032a.369.369 0 01.023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 01.375 0L9.93 2.647h.002c.015.01.027.021.04.033l.038.027c.013.014.02.03.033.045.008.011.02.021.025.033.01.02.017.038.024.058.003.011.01.021.013.032.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 01.024-.059c.007-.012.018-.02.025-.033.012-.015.021-.03.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.001l4.513-2.598a.375.375 0 01.375 0l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.03.034.044.008.012.019.021.024.033.011.02.018.04.024.06.006.01.012.021.015.032zm-.74 5.032V6.179l-1.578.908-2.182 1.256v4.283zm-4.51 7.75v-4.287l-2.147 1.225-6.126 3.498v4.325zM1.093 3.624v14.588l8.273 4.761v-4.325l-4.322-2.445-.002-.003H5.04c-.014-.01-.025-.021-.04-.031-.011-.01-.024-.018-.035-.027l-.001-.002c-.013-.012-.021-.025-.031-.04-.01-.011-.021-.022-.028-.036h-.002c-.008-.014-.013-.031-.02-.047-.006-.016-.014-.027-.018-.043a.49.49 0 01-.008-.057c-.002-.014-.006-.027-.006-.041V5.789l-2.18-1.257zM5.23.81L1.47 2.974l3.76 2.164 3.758-2.164zm1.956 13.505l2.182-1.256V3.624l-1.58.91-2.182 1.255v9.435zm11.581-10.95l-3.76 2.163 3.76 2.163 3.759-2.164zm-.376 4.978L16.21 7.087 14.63 6.18v4.283l2.182 1.256 1.58.908zm-8.65 9.654l5.514-3.148 2.756-1.572-3.757-2.163-4.323 2.489-3.941 2.27z"
-          />
-        </svg>
-        <svg
           class="fill-current w-10 text-[#06B6D4] lg:w-14 hover:scale-110 ease-in-out duration-[400ms]"
           role="img"
           viewBox="0 0 24 24"
@@ -480,28 +679,59 @@
             d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
           />
         </svg>
-        <svg
-          class="fill-current w-10 text-[#6C78AF] lg:w-14 hover:scale-110 ease-in-out duration-[400ms]"
+        <img
+          title="SQL"
+          class="fill-current w-10 text-[#777BB4] lg:w-12 py-8 hover:scale-110 ease-in-out duration-[400ms]"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>phpMyAdmin</title>
-          <path
-            d="M5.463 3.476C6.69 5.225 7.497 7.399 7.68 9.798a12.9 12.9 0 0 1-.672 5.254 4.29 4.29 0 0 1 2.969-1.523c.05-.004.099-.006.148-.008.08-.491.47-3.45-.977-6.68-1.068-2.386-3-3.16-3.685-3.365Zm1.777.037s2.406 1.066 3.326 5.547c.607 2.955.049 4.836-.402 5.773a7.347 7.347 0 0 1 4.506-1.994c.86-.065 1.695.02 2.482.233-.1-.741-.593-3.414-2.732-5.92-3.263-3.823-7.18-3.64-7.18-3.64Zm14.817 9.701-17.92 3.049a2.284 2.284 0 0 1 1.535 2.254 2.31 2.31 0 0 1-.106.61c.055-.027 2.689-1.275 6.342-2.034 3.238-.673 5.723-.36 6.285-.273a6.46 6.46 0 0 1 3.864-3.606zm-6.213 4.078c-2.318 0-4.641.495-6.614 1.166-2.868.976-2.951 1.348-5.55 1.043C1.844 19.286 0 18.386 0 18.386s2.406 1.97 4.914 2.127c1.986.125 3.505-.822 5.315-1.414 2.661-.871 4.511-.97 6.253-.975C19.361 18.116 24 19.353 24 19.353s-2.11-1.044-5.033-1.72a13.885 13.885 0 0 0-3.123-.34Z"
-          />
-        </svg>
-        <svg
-          class="fill-current w-10 text-[#61DAFB] lg:w-14 hover:scale-110 ease-in-out duration-[250ms]"
+          src="img/sql.png"
+          alt=""
+        />
+        <img
+          title="Java Script"
+          class="fill-current w-10 text-[#777BB4] lg:w-12 py-8 hover:scale-110 ease-in-out duration-[400ms]"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>React</title>
-          <path
-            d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"
-          />
-        </svg>
+          src="img/js.png"
+          alt=""
+        />
+      </div>
+      <h2 class="text-xl py-10 opacity-70">Other Applications Skill</h2>
+      <div
+        class="w-fit flex flex-wrap justify-center px-5 py-5 rounded-md space-x-5"
+      >
+        <img
+          title="Adobe Illustrator"
+          class="fill-current w-10 text-[#777BB4] lg:w-16 py-5 hover:scale-110 ease-in-out duration-[400ms]"
+          role="img"
+          viewBox="0 0 24 24"
+          src="img/aipng.png"
+          alt=""
+        />
+        <img
+          title="Adobe Premiere Pro"
+          class="fill-current w-10 text-[#777BB4] lg:w-16 py-5 hover:scale-110 ease-in-out duration-[400ms]"
+          role="img"
+          viewBox="0 0 24 24"
+          src="img/PP.png"
+          alt=""
+        />
+        <img
+          title="Figma"
+          class="fill-current w-10 text-[#777BB4] lg:w-16 py-5 hover:scale-110 ease-in-out duration-[400ms]"
+          role="img"
+          viewBox="0 0 24 24"
+          src="img/figma.svg"
+          alt=""
+        />
+        <img
+          title="Lightroom"
+          class="fill-current w-10 text-[#777BB4] lg:w-16 py-5 hover:scale-110 ease-in-out duration-[400ms]"
+          role="img"
+          viewBox="0 0 24 24"
+          src="img/Lr.png"
+          alt=""
+        />
       </div>
     </section>
     <!--skill -->
@@ -519,7 +749,7 @@
         contact.
       </h1>
       <h2 class="text-xl py-8 opacity-60">
-        Feel free to get in touch with me via social media or email
+        Contact me here, I would love to hear from you!
       </h2>
       <div class="flex flex-wrap space-x-5 justify-center w-full">
         <div
@@ -604,6 +834,26 @@
               /></svg
           ></a>
           <h1 class="text-[#1877F2] font-bold text-lg">Discord</h1>
+        </div>
+        <div
+          class="flex items-center justify-center space-x-3 py-3 w-[43.5%] lg:w-[15%]"
+        >
+          <a
+            class="text-[#1877F2] hover:scale-110 ease-in-out duration-200 hover:opacity-70"
+            href="https://discordapp.com/users/453232505865109506"
+            target="_blank"
+            ><svg
+              class="fill-current w-10"
+              role="img"
+              viewBox="0 0 19 19"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>LinkedIn</title>
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+              /></svg
+          ></a>
+          <h1 class="text-[#1877F2] font-bold text-lg">LinkedIn</h1>
         </div>
       </div>
     </section>
@@ -702,6 +952,24 @@
           ></a>
           <p class="text-[#1877F2] font-bold text-lg">Discord</p>
         </li>
+        <li class="flex justify-start items-center w-2/5 py-3 px-6">
+          <a
+            class="text-[#1877F2] hover:scale-110 ease-in-out duration-200 hover:opacity-70 mr-3"
+            href="https://discordapp.com/users/453232505865109506 "
+            target="_blank"
+            ><svg
+              class="fill-current w-10"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Discord</title>
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+              /></svg
+          ></a>
+          <p class="text-[#1877F2] font-bold text-lg">Discord</p>
+        </li>
       </ul>
     </section>
     <!--contact moblie -->
@@ -728,6 +996,31 @@
       });
     </script>
   </body>
+  <script>
+    new Swiper(".sertifSwiper1", {
+      navigation: {
+        nextEl: ".sertifSwiper1 .swiper-button-next",
+        prevEl: ".sertifSwiper1 .swiper-button-prev",
+      },
+      pagination: {
+        el: ".sertifSwiper1 .swiper-pagination",
+        clickable: true,
+      },
+      loop: true,
+    });
+
+    new Swiper(".sertifSwiper2", {
+      navigation: {
+        nextEl: ".sertifSwiper2 .swiper-button-next",
+        prevEl: ".sertifSwiper2 .swiper-button-prev",
+      },
+      pagination: {
+        el: ".sertifSwiper2 .swiper-pagination",
+        clickable: true,
+      },
+      loop: true,
+    });
+  </script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
